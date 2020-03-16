@@ -4,12 +4,13 @@ import "./App.css";
 import Nav from "./component/Nav";
 import Cards from "./component/Cards";
 import Cart from "./component/Cart";
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Router>
         <Nav />
-
+        {/* <Cards />
+      <Cart /> */}
         <Route path="/" exact component={Cards} />
         <Route path="/cart" component={Cart} />
       </Router>
